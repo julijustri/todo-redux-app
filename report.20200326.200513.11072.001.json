@@ -1,0 +1,289 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200326.200513.11072.001.json",
+    "dumpEventTime": "2020-03-26T20:05:13Z",
+    "processId": 11072,
+    "commandLine": [
+      "node",
+      "C:\\Users\\julia\\AppData\\Roaming\\npm\\\\node_modules\\@angular\\cli\\bin\\ng",
+      "build",
+      "--prod"
+    ],
+    "nodejsVersion": "v11.12.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.12.0",
+      "v8": "7.0.276.38-node.18",
+      "uv": "1.26.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.12.0/node-v11.12.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.12.0/node-v11.12.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.12.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "host": "DESKTOP-IBKVBFE"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6a272d35e",
+      "symbol": "SSL_SESSION_get0_peer+16478"
+    },
+    {
+      "pc": "0x00007ff6a272c204",
+      "symbol": "SSL_SESSION_get0_peer+12036"
+    },
+    {
+      "pc": "0x00007ff6a272ba1b",
+      "symbol": "SSL_SESSION_get0_peer+10011"
+    },
+    {
+      "pc": "0x00007ff6a28193f2",
+      "symbol": "uv_loop_fork+88258"
+    },
+    {
+      "pc": "0x00007ff6a2c3e72e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff6a2c3e667",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff6a2cf2144",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14068"
+    },
+    {
+      "pc": "0x00007ff6a2ce7f52",
+      "symbol": "v8::internal::Heap::CollectGarbage+7234"
+    },
+    {
+      "pc": "0x00007ff6a2ce6768",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff6a2cf0097",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5703"
+    },
+    {
+      "pc": "0x00007ff6a2cf0116",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5830"
+    },
+    {
+      "pc": "0x00007ff6a2e27fe1",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff6a2ee1ed6",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27190"
+    },
+    {
+      "pc": "0x0000029afe8d0481",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1498804224,
+    "totalCommittedMemory": 1498804224,
+    "usedMemory": 1424075664,
+    "availableMemory": 31537904,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2062336,
+        "used": 118448,
+        "available": 1943888
+      },
+      "old_space": {
+        "memorySize": 1427312640,
+        "committedMemory": 1427312640,
+        "capacity": 1366481456,
+        "used": 1364541856,
+        "available": 1939600
+      },
+      "code_space": {
+        "memorySize": 5767168,
+        "committedMemory": 5767168,
+        "capacity": 5212896,
+        "used": 5212896,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 7876608,
+        "committedMemory": 7876608,
+        "capacity": 2585120,
+        "used": 2585120,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 53129216,
+        "committedMemory": 53129216,
+        "capacity": 78756176,
+        "used": 51583824,
+        "available": 27172352
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 384.921,
+    "kernelCpuSeconds": 98.968,
+    "cpuConsumptionPercent": 124.074,
+    "maxRss": 4699684864,
+    "pageFaults": {
+      "IORequired": 38394364,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 5779,
+      "writes": 70
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\",
+    "=D:": "D:\\PORTATIL\\PROGRAMACION\\Fernando Herrera\\05_REDUX en Angular con RGRX\\Seccion_05_Material\\06_todoapp",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\julia\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-IBKVBFE",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\julia\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\julia",
+    "LOCALAPPDATA": "C:\\Users\\julia\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-IBKVBFE",
+    "NUMBER_OF_PROCESSORS": "12",
+    "OneDrive": "C:\\Users\\julia\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\julia\\OneDrive",
+    "OnlineServices": "Online Services",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\PuTTY\\;C:\\AppServ\\php7;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;D:\\PORTATIL\\PROGRAMACION\\PYTHON\\PYTHOM UDEMI\\Programas\\sqlite-tools-win32-x86-3300100;D:\\PORTATIL\\PROGRAMACION\\Programas Y recursos\\10_MONGODB\\mongodb-shell-win32-x86_64-2012plus-4.2.1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Users\\julia\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\julia\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Users\\julia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\AppServ\\Apache24\\bin;C:\\AppServ\\MySQL\\bin;C:\\Users\\julia\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\julia\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\4.0\\bin;C:\\Program Files\\heroku\\bin;C:\\Users\\julia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\julia\\AppData\\Local\\atom\\bin;C:\\Users\\julia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\AppServ\\Apache24\\bin;C:\\AppServ\\php5;C:\\AppServ\\MySQL\\bin;C:\\AppServ\\Apache24\\bin;C:\\AppServ\\php7;C:\\AppServ\\Apache24\\bin;C:\\AppServ\\php7;C:\\AppServ\\Apache24\\bin;C:\\AppServ\\php7;C:\\AppServ\\MySQL\\bin;C:\\AppServ\\Apache24\\bin;C:\\AppServ\\php5;C:\\AppServ\\MySQL\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "platformcode": "1M",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "QT_DEVICE_PIXEL_RATIO": "auto",
+    "RegionCode": "EMEA",
+    "RG_GPU_FRAMEWORK_ENGINE_RESOURCEDIR": "C:\\Program Files\\Red Giant\\RGFX",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\julia\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\julia\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-IBKVBFE",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-IBKVBFE",
+    "USERNAME": "julia",
+    "USERPROFILE": "C:\\Users\\julia",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}
